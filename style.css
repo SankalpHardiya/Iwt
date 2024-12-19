@@ -237,3 +237,185 @@
   background: #333; /* Darker background on hover */
   border-color: #00FF96; /* Cyberpunk Green border on hover */
 }
+
+
+
+/* Mobile Devices (up to 480px) */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar ul li {
+    margin: 5px 0;
+  }
+
+  .navbar .logo {
+    font-size: 20px;
+  }
+
+  #home .taglines {
+    font-size: 16px;
+  }
+
+  .space-for-images {
+    flex-direction: column; /* Stack images vertically */
+    height: auto; /* Allow height to adjust automatically */
+    padding: 30px;
+  }
+
+  .space-for-images img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    max-width: none; /* Remove the max-width limit */
+  }
+
+  .cards-container {
+    flex-direction: column; /* Stack cards vertically */
+    padding: 10px;
+  }
+
+  .card {
+    width: 90%; /* Make the cards responsive on mobile */
+    margin-bottom: 20px;
+  }
+
+  #about .card, #contact .card {
+    width: 100%; /* Full width for about and contact cards */
+    height: auto; /* Adjust height for mobile view */
+  }
+}
+
+/* Tablets (up to 768px) */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar ul li {
+    margin: 5px 0;
+  }
+
+  .navbar .logo {
+    font-size: 22px;
+  }
+
+  #home .taglines {
+    font-size: 18px;
+  }
+
+  .space-for-images {
+    flex-direction: column; /* Stack images vertically */
+    height: auto;
+    padding: 40px;
+  }
+
+  .space-for-images img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    max-width: none;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .card {
+    width: 80%; /* Responsive card size on tablet */
+    margin-bottom: 20px;
+  }
+
+  #about .card, #contact .card {
+    width: 90%; /* Adjust the width for tablets */
+    height: auto;
+  }
+}
+
+/* Desktop (up to 1200px) */
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  .navbar .logo {
+    font-size: 26px;
+  }
+
+  #home .taglines {
+    font-size: 20px;
+  }
+
+  .space-for-images {
+    height: 400px; /* Adjust height for larger screens */
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .card {
+    width: 30%; /* Three cards in a row for larger screens */
+  }
+
+  #about .card, #contact .card {
+    width: 45%; /* Slightly smaller width for larger screens */
+    height: auto;
+  }
+}
+
+/* Large Desktop (more than 1200px) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 20px; /* Larger font size for large screens */
+  }
+
+  .navbar .logo {
+    font-size: 28px;
+  }
+
+  #home .taglines {
+    font-size: 24px;
+  }
+
+  .space-for-images {
+    height: 500px; /* Set height for larger displays */
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .card {
+    width: 22%; /* Four cards in a row for large screens */
+  }
+
+  #about .card, #contact .card {
+    width: 45%; /* Adjust the width for large screens */
+    height: auto;
+  }
+}
